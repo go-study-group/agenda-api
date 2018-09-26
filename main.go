@@ -26,6 +26,6 @@ func main() {
 	apiGroup.POST("/:group", items.add)
 
 	// Start server
-	hostString := fmt.Sprintf(":%s", conf.Port)
+	hostString := fmt.Sprintf(":%d", conf.Port)
 	e.Logger.Fatal(e.Start(hostString))
 }
